@@ -61,3 +61,50 @@
 // console.log(a++); // a++ (increments post-display)
 // a++;
 // console.log(a);
+
+
+// !!! LOOPS !!!
+
+// let age = 20;
+
+// if (age > 18 && age > 59) {
+//     console.log('Eligible to vote and pension');
+// } else if (age < 60) {
+//     console.log("Won't get a pension now");
+// } else if (age === 18) {
+//     console.log('You turned 18');
+// } else {
+//     console.log('Not Eligible to vite');
+// };
+
+// switch(age) {
+//     case 18:
+//         console.log('You turned 18');
+//         break;
+//     case 19:
+//         console.log('Eligible to vote');
+//         break;
+//     default:
+//         console.log('No match');
+// };
+
+// While Loop 1. Initialization, 2. Condition
+
+// let count = 0;
+
+// while (count < 5) {
+//     ++count;
+//     console.log(count);
+// };
+
+
+// String manipulation - targeting partial strings(substrings)
+let str = 'Hi how are you?';
+
+str[0] = 'h';
+
+console.log(str[0]);
+
+console.log(str.substring(3,10));
+
+console.log(str.substr(3,10)); // 'substr' - depricated
