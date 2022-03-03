@@ -209,6 +209,9 @@ let names = ['John', 'Mike', 'Peter', 'Kevin'];
 
 // declare numbers varriable equal to an array
 let numbers = [12, 23, 18, 26, 40];
+
+console.log('Original numbers Array: ' + numbers);
+
 // '.filter()' - creates a new array with all elements that pass the test implemented by the provided function
 let evenNumbers = numbers.filter(getEven);
 
@@ -216,8 +219,7 @@ function getEven(num) {
     return num%2 == 0;
 };
 
-console.log('Filtered: ' + evenNumbers);
-console.log('Original: ' + numbers);
+console.log('Filtered Only Even Numbers Within the numbers Array: ' + evenNumbers);
 
 // '.map()' - creates a new array populated with the results of calling a provided function on every element in the calling array
 let squaredNum = numbers.map(getSquared);
@@ -226,7 +228,7 @@ function getSquared(num) {
     return num * num;
 };
 
-console.log('Squared: ' + squaredNum);
+console.log('Each Number in the numbers Array Squared: ' + squaredNum);
 
 // '.reduce()' - executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value
 let sum = numbers.reduce(getSum, 0);
@@ -235,4 +237,4 @@ function getSum(total, sum) {
     return total + sum;
 };
 
-console.log('Sum of all numbers: ' + sum);
+console.log('Sum of All Numbers in the numbers Array: ' + sum);
