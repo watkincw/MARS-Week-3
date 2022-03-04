@@ -207,34 +207,83 @@ let names = ['John', 'Mike', 'Peter', 'Kevin'];
 // // the three above function output the same results
 
 
-// declare numbers varriable equal to an array
-let numbers = [12, 23, 18, 26, 40];
+// // declare numbers varriable equal to an array
+// let numbers = [12, 23, 18, 26, 40];
 
-console.log('Original numbers Array: ' + numbers);
+// console.log('Original numbers Array: ' + numbers);
 
-// '.filter()' - creates a new array with all elements that pass the test implemented by the provided function
-let evenNumbers = numbers.filter(getEven);
+// // '.filter()' - creates a new array with all elements that pass the test implemented by the provided function
+// let evenNumbers = numbers.filter(getEven);
 
-function getEven(num) {
-    return num%2 == 0;
-};
+// function getEven(num) {
+//     return num%2 == 0;
+// };
 
-console.log('Filtered Only Even Numbers Within the numbers Array: ' + evenNumbers);
+// console.log('Filtered Only Even Numbers Within the numbers Array: ' + evenNumbers);
 
-// '.map()' - creates a new array populated with the results of calling a provided function on every element in the calling array
-let squaredNum = numbers.map(getSquared);
+// // '.map()' - creates a new array populated with the results of calling a provided function on every element in the calling array
+// let squaredNum = numbers.map(getSquared);
 
-function getSquared(num) {
-    return num * num;
-};
+// function getSquared(num) {
+//     return num * num;
+// };
 
-console.log('Each Number in the numbers Array Squared: ' + squaredNum);
+// console.log('Each Number in the numbers Array Squared: ' + squaredNum);
 
-// '.reduce()' - executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value
-let sum = numbers.reduce(getSum, 0);
+// // '.reduce()' - executes a user-supplied "reducer" callback function on each element of the array, in order, passing in the return value from the calculation on the preceding element. The final result of running the reducer across all elements of the array is a single value
+// let sum = numbers.reduce(getSum, 0);
 
-function getSum(total, sum) {
-    return total + sum;
-};
+// function getSum(total, sum) {
+//     return total + sum;
+// };
 
-console.log('Sum of All Numbers in the numbers Array: ' + sum);
+// console.log('Sum of All Numbers in the numbers Array: ' + sum);
+
+
+
+// !!! OBJECTS !!!
+
+// let person = {
+//     firstName: 'Shane',
+//     lastName: 'Warne',
+//     play: () => {
+//         console.log('All time greats');
+//     },
+// };
+
+// console.log(person.firstName + ' ' + person.lastName);
+
+// person.country = 'Aus';
+
+// console.log('Before: ', person);
+
+// // delete person.country;
+// // console.log('After deleting country: ', person);
+
+// console.log('lastName' in person);
+
+// for (const key in person) {
+//     console.log(key + ':', person[key]);
+// };
+
+// person.play();
+
+
+// // !!! CONTRUSTOR FUNCTIONS !!!
+
+// function Person(firstName, lastName, age) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//     this.getInfo = function() {
+//         return this.firstName + ' ' + this.lastName + ' age: ' + this.age;
+//     };
+// };
+
+// let person1 = new Person('Peter', 'Waugh', 34);
+// let person2 = new Person('John', 'Doe', 31);
+// let person3 = new Person('Mike', 'Travis', 38);
+
+// console.log(person3);
+
+// console.log(person1.getInfo());
