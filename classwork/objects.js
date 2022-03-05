@@ -1,29 +1,29 @@
 // !!! OBJECTS !!!
 
-// let person = {
-//     firstName: 'Shane',
-//     lastName: 'Warne',
-//     play: () => {
-//         console.log('All time greats');
-//     },
-// };
+let person = {
+    firstName: 'Shane',
+    lastName: 'Warne',
+    play: () => {
+        console.log('All time greats');
+    },
+};
 
-// console.log(person.firstName + ' ' + person.lastName);
+console.log(person.firstName + ' ' + person.lastName);
 
-// person.country = 'Aus';
+person.country = 'Aus';
 
-// console.log('Before: ', person);
+console.log('Before: ', person);
 
-// // delete person.country;
-// // console.log('After deleting country: ', person);
+// delete person.country;
+// console.log('After deleting country: ', person);
 
-// console.log('lastName' in person);
+console.log('lastName' in person);
 
-// for (const key in person) {
-//     console.log(key + ':', person[key]);
-// };
+for (const key in person) {
+    console.log(key + ':', person[key]);
+};
 
-// person.play();
+person.play();
 
 
 // !!! CONTRUSTOR FUNCTIONS !!!
